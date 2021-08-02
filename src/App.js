@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import HelloWorld from './HelloWorld';
+import HelloWorld from './components/HelloWorld';
 
 class App extends Component {
   render() {
     return(
-      <HelloWorld name="Deron"/>
+      <HelloWorld name="Deron" age="25"/>
     );
   }
   
