@@ -2,19 +2,22 @@ import React, { Component } from 'react';
 class Greeting extends Component {
     constructor(props) {
         super(props);
+        this.click = this.click.bind(this);
+        // Set initial state (ONLY ALLOWED IN CONSTRUCTION)
         this.state = {
-            greeting: "Grand Rising"
+            greeting: "Grand Rising from the DOM"
         };
     }
-    render() {
-        setTimeout(() => {
+        click(e) {
             this.setState({
-                greeting: "Hello World!"
+                greeting: "Grand Rising from the Button"
             });
-        }, 2000);
+        }
+    render() {
         return (
             <div>
                 <p>{this.state.greeting}</p>
+                <button onClick={this.click}>Click Me</button>
             </div>
         );
         }
