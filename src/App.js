@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import WithFragments from './components/WithFragments';
+import Greeting from './components/Greeting';
 
 class App extends Component {
   render() {
     return(
-      <WithFragments></WithFragments>
+      <Greeting/>
     );
   }
   
