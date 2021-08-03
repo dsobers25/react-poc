@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import HelloWorld from './components/HelloWorld';
+import WithFragments from './components/WithFragments';
 
 class App extends Component {
   render() {
     return(
-      <HelloWorld name="Deron" age="25"/>
+      <WithFragments></WithFragments>
     );
   }
   
